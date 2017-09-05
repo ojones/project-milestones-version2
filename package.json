@@ -1,5 +1,6 @@
 {
     "name": "project-milestones",
+    "homepage": "https://ojones.github.io/project-milestones-version2",
     "version": "0.1.0",
     "private": true,
     "dependencies": {
