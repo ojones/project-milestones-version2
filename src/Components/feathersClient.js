@@ -5,8 +5,9 @@ import hooks from 'feathers-hooks';
 import auth from 'feathers-authentication-client';
 import io from 'socket.io-client/dist/socket.io';
 
-export const socket = io('http://198.199.84.80:3030/', {
-  transports: ['websocket']
+export const socket = io('https://feathers3.giveth.io/', {
+  transports: ['websocket'],
+  path: '/3031/socket.io'
 })
 
 // socket IO error events
