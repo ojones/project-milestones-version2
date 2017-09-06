@@ -123,7 +123,7 @@ class ReviewMilestones extends Component {
 								if (self.state.displayReview)
 									return;
 								return <Item
-									Icon='fa-heart'
+									Icon='fa-sticky-note'
 									key={idx}
 									Title={ milestone.name }
 									Details={ details }

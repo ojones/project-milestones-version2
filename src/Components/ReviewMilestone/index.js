@@ -45,7 +45,7 @@ class ReviewMilestone extends Component {
 			milestone: nextProps.milestone,
 		})
 	}
-	
+
 	handleOptionChange(e) {
 		this.setState({
 			option: e.target.value,
@@ -77,7 +77,7 @@ class ReviewMilestone extends Component {
 		milestones.update(milestone._id, milestone).then((updatedItem) => {
       this.props.exitReview();
 		});
-		
+
 		this.timer = setInterval(this.tick, 500);
 	}
 
@@ -93,7 +93,7 @@ class ReviewMilestone extends Component {
 								width: '100%',
 								resize:'none',
 								boxSizing:'border-box'};
-		
+
 		if (this.state.showQuiz) {
 			return (
 				<div className="reviewMilestone">
@@ -122,7 +122,7 @@ class ReviewMilestone extends Component {
 											<div className='buttons'>
 												<div className='yes round-div' onClick={() => {self.answer(id, true)}}>
 													<div className="icon">
-														<span className={'fa fa-heart'} />
+														<span className={'fa fa-check'} />
 													</div>
 													<div className='option'>
 														Totally
@@ -130,7 +130,7 @@ class ReviewMilestone extends Component {
 												</div>
 												<div className='no round-div' onClick={() => {self.answer(id, false)}}>
 													<div className="icon">
-														<span className={'fa fa-heart'} />
+														<span className={'fa fa-times-circle-o'} />
 													</div>
 													<div className='option'>
 														Not Really

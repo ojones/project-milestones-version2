@@ -11,7 +11,7 @@ class Home extends Component {
 				<Header title="PM" />
 				<Content>
 					<Item
-						Icon='fa-heart'
+						Icon='fa-legal'
 						Title="Review milestones"
 						Details="These milestones you have volunteered to review."
 						Link="See List"
@@ -19,27 +19,24 @@ class Home extends Component {
 						isMilestone={false}
 					/>
 					<Item
-						Icon='fa-heart'
+						Icon='fa-search'
 						Title="Find milestones"
 						Details="Discover milestones created by others."
 						Link="See List"
-						onClick={this.props.findMilestones}
 						isMilestone={false}
 					/>
 					<Item
-						Icon='fa-heart'
+						Icon='fa-plus'
 						Title="Create a new milestone"
 						Details="Create your own milestone."
 						Link="Create milestone"
-						onClick={this.props.createNewMilestone}
 						isMilestone={false}
 					/>
 					<Item
-						Icon='fa-heart'
+						Icon='fa-paint-brush'
 						Title="My milestones"
 						Details="Manage milestones you have created."
 						Link="See List"
-						onClick={this.props.myMilestones}
 						isMilestone={false}
 					/>
 				</Content>
